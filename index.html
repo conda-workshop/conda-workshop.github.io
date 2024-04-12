@@ -135,7 +135,8 @@
                     </div>
                     <div class="col mx-5">
                         <h4 class="text-center text-md-start">Anna Rogers</h4>
-                        <p class="text-center text-md-start"><small>Associate Professor at IT University of Copenhagen</small></p>
+                        <p class="text-center text-md-start"><small>Associate Professor at IT University of
+                                Copenhagen</small></p>
 
                         <p><b>Abstract:</b> TBA
                         </p>
@@ -151,7 +152,8 @@
                     </div>
                     <div class="col mx-5">
                         <h4 class="text-center text-md-start">Jesse Dodge</h4>
-                        <p class="text-center text-md-start"><small>Research Scientist at Allen Institute for AI</small></p>
+                        <p class="text-center text-md-start"><small>Research Scientist at Allen Institute for AI</small>
+                        </p>
                         <p><b>Abstract:</b> TBA
                         </p>
                     </div>
@@ -167,7 +169,8 @@
                     <div class="col mx-5">
                         <h4 class="text-center text-md-start">Dieuwke Hupkes</h4>
                         <p class="text-center text-md-start"><small>Research Scientist at Meta</small></p>
-                        <p><u>Evaluation data contamination: how much is there, and how much does it actually matter?</u></p>
+                        <p><u>Evaluation data contamination: how much is there, and how much does it actually
+                                matter?</u></p>
                         <p><b>Abstract:</b> With many of the current "SOTA" LLMs being closed sourced and their training
                             data inaccessible, more and more questions arise that relate to potential contamination of
                             the evaluation datasets used to claim their results. Various claims can be found online that
@@ -190,7 +193,8 @@
                     </div>
                     <div class="col mx-5">
                         <h4 class="text-center text-md-start">Margaret Mitchell</h4>
-                        <p class="text-center text-md-start"><small>Researcher and Chief Ethics Scientist at HuggingFace</small></p>
+                        <p class="text-center text-md-start"><small>Researcher and Chief Ethics Scientist at
+                                HuggingFace</small></p>
                         <p><u>On the value of carefully measuring data.</u></p>
                         <p><b>Abstract:</b> TBA
                         </p>
@@ -285,38 +289,48 @@
             </div>
 
             <div class="py-3 fw-light" id="shared_task">
-                <h2 class="border-bottom pb-1">Shared Task: Data Contamination Report</h2>
+                <h2 class="border-bottom pb-1">Shared Task: Data Contamination Evidence Collection</h2>
 
-                <p class="pt-2">In addition to paper contributions, we are organizing a <b>community effort on
-                        centralized data
-                        contamination evidence collection</b>. While the problem of contaminated training data is
-                    prevalent and
-                    serious, the breadth and depth of this contamination are still undocumented. The concrete evidence
-                    of contamination today is scattered across papers, blog posts, and social media, and it is suspected
-                    to be significantly smaller than the true scope of data contamination in NLP.</p>
-
-                <p>We aim to provide a structured, centralized platform for contamination evidence collection to help
-                    the community understand the extent of the problem and to help researchers avoid repeating the same
-                    mistakes. The reports will be reviewed by the CONDA 2024 workshop organizers through pull requests.
+                <p class="pt-2">In addition to paper contributions, we are organizing a community effort on centralized
+                    data contamination evidence collection. While the problem of data contamination is prevalent and
+                    serious, the breadth and depth of this contamination are still largely unknown. The concrete
+                    evidence of contamination is scattered across papers, blog posts, and social media, and it is
+                    suspected that the true scope of data contamination in NLP is significantly larger than reported.
                 </p>
 
-                <h5>A Compilation Report</h5>
-                <p>In addition, we plan to release a joint report with all evidence during the workshop, which will
-                    provide a summary and overview of the collected evidence. The participants who contribute to the
-                    task will be listed as co-authors in the final report (a deadline for when the report will be
-                    compiled will be given later).
+                <p>With this shared task we aim to provide a structured, centralized platform for contamination evidence
+                    collection to help the community understand the extent of the problem and to help researchers avoid
+                    repeating the same mistakes. The shared task also gathers evidence of clean, non-contaminated
+                    instances. The platform is already available for perusal at <a
+                        href="https://huggingface.co/spaces/CONDA-Workshop/Data-Contamination-Report">Data Contamination
+                        Report</a>.
                 </p>
 
-                <h5>Report Submission Information</h5>
-                <p>A submission should contain the dataset and corpus or model assessed, in addition to some evidence of 
-                    contamination (or lack of). Reports must be submitted through a Pull Request in the <a
-                        href="https://huggingface.co/spaces/CONDA-Workshop/Data-Contamination-Report">Data
-                        Contamination Report</a> space at HuggingFace.
-                    The reports must follow the <b>Contribution Guidelines</b> provided in the space and will be
-                    reviewed by the organizers. If you have any question, please contact us at
-                    <a href="mailto:conda-workshop@googlegroups.com">conda-workshop@googlegroups.com</a> or open a
+                <h5>Compilation Paper</h5>
+                <p>As a companion to the contamination evidence platform, we will produce a paper that will provide a
+                    summary and overview of the evidence collected in the shared task. The participants who contribute
+                    to the shared task will be listed as co-authors in the paper, to be published in the workshop
+                    proceedings.
+                </p>
+
+                <h5>Instructions for Evidence Submission</h5>
+                <p>Each submission should report a case of contamination or lack of contamination thereof. The
+                    submission can be either about (1) contamination in the corpus used to pre-train language models,
+                    where the pre-training corpus contains a specific evaluation dataset, or about (2) contamination in
+                    a model that shows evidence of having seen a specific evaluation dataset while being trained. Each
+                    submission needs to mention the corpus (or model) and the evaluation dataset, in addition to some
+                    evidence of contamination. Alternatively, we also welcome evidence of a lack of contamination.
+                </p>
+
+                <p>Reports must be submitted through a Pull Request in the Data Contamination Report space at
+                    HuggingFace. The reports must follow the Contribution Guidelines provided in the space and will be
+                    reviewed by the organizers. If you have any questions, please contact us at <a
+                        href="mailto:conda-workshop@googlegroups.com">conda-workshop@googlegroups.com</a> or open a
                     discussion in the space itself.
+                </p>
 
+                <p>URL with contribution guidelines: <a href="https://huggingface.co/spaces/CONDA-Workshop/Data-Contamination-Report">Data Contamination Report</a>  (“Contribution Guidelines” tab).
+                </p>
 
             </div>
 
@@ -327,7 +341,7 @@
                     href="mailto:conda-workshop@googlegroups.com">conda-workshop@googlegroups.com</a>
                 <div class="row pt-2">
 
-                    <div class="col-lg-3 col-md-6 col-sm-12 p-1 text-center">
+                    <div class="col-lg-3 col-md-6 col-sm-12 p-1 text-center py-4">
                         <div style="display: flex; justify-content: center;">
                             <img src="https://osainz59.github.io/assets/img/oscar2_0_upscaled_square.jpg"
                                 class="d-block m-2 rounded card-img-top" loading="lazy" style="width:150px;">
@@ -337,7 +351,7 @@
                         <a><small>University of the Basque Country</small></a><br>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12 p-1 text-center">
+                    <div class="col-lg-3 col-md-6 col-sm-12 p-1 text-center py-4">
                         <div style="display: flex; justify-content: center;">
                             <img src="https://ikergarcia1996.github.io/Iker-Garcia-Ferrero//images/Iker.jpeg"
                                 class="d-block m-2 rounded card-img-top" loading="lazy" style="width:150px;">
@@ -348,7 +362,7 @@
                         <a><small>University of the Basque Country</small></a><br>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12 p-1 text-center">
+                    <div class="col-lg-3 col-md-6 col-sm-12 p-1 text-center py-4">
                         <div style="display: flex; justify-content: center;">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Eneko_elhuyar_Aitziber_Agirre_RuizeArkautekoa.png"
                                 class="d-block m-2 rounded card-img-top" loading="lazy" style="width:150px;">
@@ -358,7 +372,7 @@
                         <a><small>University of the Basque Country</small></a><br>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12 p-1 text-center">
+                    <div class="col-lg-3 col-md-6 col-sm-12 p-1 text-center py-4">
                         <div style="display: flex; justify-content: center;">
                             <img src="assets/jon.ander.square.png" class="d-block m-2 rounded card-img-top"
                                 loading="lazy" style="width:150px;">
@@ -367,7 +381,7 @@
                         <a><small>Cohere</small></a><br>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12 p-1 text-center">
+                    <div class="col-lg-3 col-md-6 col-sm-12 p-1 text-center py-4">
                         <div style="display: flex; justify-content: center;">
                             <img src="https://alonjacovi.github.io/images/site.png"
                                 class="d-block m-2 rounded card-img-top" loading="lazy" style="width:150px;">
@@ -376,7 +390,7 @@
                         <a><small>Bar Ilan University</small></a><br>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12 p-1 text-center">
+                    <div class="col-lg-3 col-md-6 col-sm-12 p-1 text-center py-4">
                         <div style="display: flex; justify-content: center;">
                             <img src="https://yanaiela.github.io/figs/yanai2.jpg"
                                 class="d-block m-2 rounded card-img-top" loading="lazy" style="width:150px;">
@@ -386,7 +400,7 @@
                         <a><small>University of Washington</small></a>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12 p-1 text-center">
+                    <div class="col-lg-3 col-md-6 col-sm-12 p-1 text-center py-4">
                         <div style="display: flex; justify-content: center;">
                             <img src="https://irl.spacy.io/static/60f32525d2dc3f6ae521190bb9f54178/bbca6/yoav-goldberg.jpg"
                                 class="d-block m-2 rounded card-img-top" loading="lazy" style="width:150px;">
